@@ -211,7 +211,7 @@ $(function () {
         SimpleSelects = function () {
         return {
             init: function init() {
-                $("select").simpleselect();
+                $("select").chosen({disable_search: true, placeholder_text_multiple: ' ', no_results_text: 'Нет результатов'});
             }
         };
     }()

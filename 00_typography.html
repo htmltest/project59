@@ -11,7 +11,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="vendor/jquery.simpleselect.min.css">
+    <link rel="stylesheet" href="vendor/chosen/chosen.css">
     <link rel="stylesheet" href="vendor/jquery.slick.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/after.css">
@@ -457,6 +457,32 @@
                             </select>
                         </div>
                         <div class="form__input-wrapper">
+                            <label class="form__label short">Опции (100%)</label>
+                            <div class="form__field">
+                                <select class="form__select__wide">
+                                    <option>Опция 1</option>
+                                    <option>Опция 2</option>
+                                    <option>Опция 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label class="form__label short">Опции (мульти)</label>
+                            <div class="form__field">
+                                <select class="form__select__wide" multiple="multiple">
+                                    <option>Опция 1</option>
+                                    <option>Опция 2</option>
+                                    <option>Опция 3</option>
+                                    <option>Опция 4</option>
+                                    <option>Опция 5</option>
+                                    <option>Опция 6</option>
+                                    <option>Опция 7</option>
+                                    <option>Опция 8</option>
+                                    <option>Опция 9</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__input-wrapper">
                             <label class="form__label">Загрузка файла</label>
                             <input type="file" data-value="Выбрать файл">
                         </div>
@@ -544,7 +570,7 @@
     </div>
     <script src="vendor/jquery.min.js"></script>
     <script src="vendor/jquery.validate.min.js"></script>
-    <script src="vendor/jquery.simpleselect.min.js"></script>
+    <script src="vendor/chosen/chosen.jquery.min.js"></script>
     <script src="vendor/jquery.nicefileinput.min.js"></script>
     <script src="vendor/jquery.maskedinput.min.js"></script>
     <script src="vendor/jquery.slick.min.js"></script>
