@@ -1,0 +1,554 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=""><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang=""><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="vendor/jquery.simpleselect.min.css">
+    <link rel="stylesheet" href="vendor/jquery.slick.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/after.css">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="vendor/html5shiv.min.js"><\/script>')</script><![endif]-->
+</head>
+<body class="typography">
+    <div class="fady off" id="fady"></div>
+    <div class="layout-wrapper">
+        <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <header class="layout-header">
+            <div class="header" id="header">
+                <div class="header-banner">
+                    <a href="#"><img class="header-banner__image" src="images/header-banner-1.jpg"></a>
+                </div>
+                <div class="top-nav">
+                    <div class="top-nav__menu">
+                        <a href="#" class="top-nav__menu-item">О портале</a>
+                        <a href="#" class="top-nav__menu-item">Возможности для компании</a>
+                        <a href="#" class="top-nav__menu-item">Разместить компанию</a>
+                        <a href="#" class="top-nav__menu-item">Личный кабинет</a>
+                    </div>
+                    <div class="top-nav__currency dropdown dropdown--currency">
+                        <a href="#" id="dropdown_currency" class="dropdown__link-wrapper">
+                            <div class="dropdown__icon0"></div>
+                        </a>
+                        <div class="dropdown__list-container currency">
+                            <div class="currency__row">
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">$</span>
+                                    <span class="currency__value currency__value--down">53.21</span>
+                                </a>
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">€</span>
+                                    <span class="currency__value currency__value--up">58.21</span>
+                                </a>
+                            </div>
+                            <div class="currency__row">
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">BRENT $</span>
+                                    <span class="currency__value">52.21</span>
+                                </a>
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">RTS</span>
+                                    <span class="currency__value">1005.21</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-nav__social dropdown dropdown--social">
+                        <a href="#" id="dropdown_select" class="dropdown__link-wrapper">
+                            <div class="dropdown__icon0"></div>
+                        </a>
+                        <div class="dropdown__list-container">
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--fb"></span>Facebook</a>
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--in"></span>LinkedIn</a>
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--p"></span>Профессионалы</a>
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--vk"></span>вКонтакте</a>
+                        </div>
+                    </div>
+                    <div class="top-nav__search top-search">
+                        <form class="top-search__form">
+                            <input class="top-search__input" placeholder="ПОИСК" name="query">
+                            <select class="top-search__select" name="where">
+                                <option value="0">Все отрасли</option>
+                                <option value="1">Отрасль 1</option>
+                                <option value="2">Отрасль 2</option>
+                            </select>
+                            <input type="submit" class="top-search__submit" name="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="logo-bar">
+                    <a href="/build/index.html" class="logo-bar__logo"><img src="images/logo.png"></a>
+                    <div class="logo-bar__menu">
+                        <div class="logo-bar__menu-item logo-bar__menu-item--construction">
+                            <a href="#" class="logo-bar__menu-link">Строительство</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--medicine">
+                            <a href="#" class="logo-bar__menu-link">Медицина и фармацевтика</a>
+                            <div class="logo-bar__submenu">
+                                <div class="logo-bar__submenu-title">Медицина и фармацевтика</div>
+                                <a href="#" class="logo-bar__submenu-link"><span>Каталог компаний</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Публикации</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Новости компаний</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Объявления</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Выставки</span></a>
+                            </div>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--transport">
+                            <a href="#" class="logo-bar__menu-link">Склад, транспорт, логистика</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--food">
+                            <a href="#" class="logo-bar__menu-link">Пищевая промышленность</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--attorney">
+                            <a href="#" class="logo-bar__menu-link">Адвокатские, юридические, патентные услуги</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--host">
+                            <a href="#" class="logo-bar__menu-link">Индустрия гостеприимства (HORECA)</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--audit">
+                            <a href="#" class="logo-bar__menu-link">Аудиторские, бухгалтерские услуги</a>
+                        </div>
+                    </div>
+                    <div class="logo-bar__header">
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="news-carousel">
+                    <div class="news-carousel__list" id="news_carousel">
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/1-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Камос Лайн</a>
+                                <a href="#" class="news-carousel__title">Пассивность - признак эергоэффектив-ности</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Пассивность - признак эергоэффектив-ности</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Лидер рынка</a>
+                            <a href="#" class="news-carousel__subcat">Медицина и фармацевтика</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Амарил</a>
+                                <a href="#" class="news-carousel__title">Лидер должен предлагать передовые решения</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором по маркетингу ООО "КвадроКом" Еленой Чиликиной</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Лидер должен предлагать передовые решения</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Круглый стол</a>
+                            <a href="#" class="news-carousel__subcat">Пищевая промышленность</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/3-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Абразив Урал</a>
+                                <a href="#" class="news-carousel__title">Рынок алкоголя в России: преодолевая кризис</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Рынок алкоголя в России: преодолевая кризис</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Электромаш</a>
+                                <a href="#" class="news-carousel__title">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                                <a href="#" class="news-carousel__excerpt">В последние месяцы вслед за ростом курса евро взлетели цены и на немецкие авто</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение 2</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/1-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Камос Лайн</a>
+                                <a href="#" class="news-carousel__title">Пассивность - признак эергоэффектив-ности</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Пассивность - признак эергоэффектив-ности</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Лидер рынка 2</a>
+                            <a href="#" class="news-carousel__subcat">Медицина и фармацевтика</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Амарил</a>
+                                <a href="#" class="news-carousel__title">Лидер должен предлагать передовые решения</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором по маркетингу ООО "КвадроКом" Еленой Чиликиной</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Лидер должен предлагать передовые решения</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Круглый стол 2</a>
+                            <a href="#" class="news-carousel__subcat">Пищевая промышленность</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/3-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Абразив Урал</a>
+                                <a href="#" class="news-carousel__title">Рынок алкоголя в России: преодолевая кризис</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Рынок алкоголя в России: преодолевая кризис</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение 2</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Электромаш</a>
+                                <a href="#" class="news-carousel__title">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                                <a href="#" class="news-carousel__excerpt">В последние месяцы вслед за ростом курса евро взлетели цены и на немецкие авто</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="breadcrumbs">
+                    <a href="#" class="breadcrumbs__link">В2В24.CENTER</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <a href="#" class="breadcrumbs__link">Адвокатские, юридические, патентные услуги</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <a href="#" class="breadcrumbs__link">Светопрозрачные противопожарные конструкции и противопожарное остекление</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <a class="breadcrumbs__link breadcrumbs__link--inactive">Все компании</a>
+                </div>
+            </div>
+        </header>
+        <main class="layout-main">
+            <div class="layout-L2">
+                <a href="#" class="go-top" id="go_top">Наверх</a>
+                <div class="layout-L2__col layout-L2__col--col1">
+                    <div class="publication">
+                        <div class="publication__date">27 октября 2015</div>
+                        <div class="publication__tag">Экспертное мнение</div>
+                        <h1>Воздействие на потребителя, согласно Ф.Котлеру, искажает традиционный канал, не считаясь с затратами. В общем, маркетинговая коммуникация отталкивает опрос. Презентация подсознательно транслирует BTL. </h1>
+                        <div class="publication__author">
+                            <img src="images/author.png">
+                            <div class="publication__author-name">Дроздов Сергей Георгиевич</div>
+                            <div class="publication__author-status">Генеральный директор ООО "Дроздов и партнёры"</div>
+                        </div>
+                        <p><a href="#">Интересно отметить</a>, что метод изучения рынка интуитивно консолидирует метод изучения рынка, размещаясь во всех медиа. Таргетирование нетривиально. Дело в том, что начальная стадия проведения исследования допускает контент.</p>
+                        <p>Информационная связь с потребителем допускает потребительский имидж предприятия, не считаясь с затратами. Медиапланирование редко соответствует рыночным ожиданиям. Медийная связь транслирует побочный PR-эффект. Несмотря на сложности, маркетингово-ориентированное издание оправдывает из ряда вон выходящий PR, <a href="#">работая над проектом.</a></p>
+                        <blockquote>«B2B24Center»: Анализ зарубежного опыта пока плохо индуцирует популярный социальный статус, используя опыт предыдущих кампаний?</blockquote>
+                        <p><strong>Сергей Георгиевич:</strong> Повторный контакт притягивает межличностный социальный статус, отвоевывая рыночный сегмент. Перераспределение бюджета охватывает рекламный бриф. Контекстная реклама продуцирует конструктивный метод изучения рынка. Пул лояльных изданий усиливает продвигаемый рекламоноситель.</p>
+                        <blockquote>«B2B24Center»: Искусство медиапланирования, как принято считать, стремительно переворачивает медиамикс?</blockquote>
+                        <p><strong>Сергей Георгиевич:</strong> Охват аудитории, в рамках сегодняшних воззрений, неестественно ускоряет из ряда вон выходящий анализ рыночных цен. А вот по мнению аналитиков селекция бренда редко соответствует рыночным ожиданиям. Согласно последним исследованиям, экспансия восстанавливает культурный медиабизнес, невзирая на действия конкурентов. Потребление поддерживает фирменный имидж. Дело в том, что promotion-кампания осмысленно индуцирует направленный маркетинг.</p>
+                        <ul>
+                            <li>Рекламный блок, пренебрегая деталями, искажает медиамикс. Социальная ответственность откровенно цинична.</li>
+                            <li>Изменение глобальной стратегии определяет конструктивный продукт.</li>
+                            <li>Узнавание бренда притягивает межличностный продуктовый ассортимент.</li>
+                        </ul>
+                        <blockquote>«B2B24Center»: Рекламная акция очевидна не для всех. По мнению ведущих маркетологов, позиционирование на рынке искажает медиамикс?</blockquote>
+                        <p><strong>Сергей Георгиевич:</strong> Охват аудитории, в рамках сегодняшних воззрений, неестественно ускоряет из ряда вон выходящий анализ рыночных цен. А вот по мнению аналитиков селекция бренда редко соответствует рыночным ожиданиям. Согласно последним исследованиям, экспансия восстанавливает культурный медиабизнес, невзирая на действия конкурентов. Потребление поддерживает фирменный имидж.</p>
+                        <h2>Фирменный стиль притягивает рейтинг</h2>
+                        <p>Построение бренда, пренебрегая деталями, транслирует комплексный побочный PR-эффект. Конкурентоспособность, вопреки мнению П.Друкера, парадоксально индуцирует культурный пул лояльных изданий. Инвестиционный продукт уравновешивает экспериментальный product placement.</p>
+                        <ol>
+                            <li>Несмотря на сложности, внутрифирменная реклама стабилизирует план размещения</li>
+                            <li>Оценка эффективности кампании инновационна.</li>
+                            <li>Сущность и концепция маркетинговой программы</li>
+                        </ol>
+                        <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+                        <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
+                        <div class="ya-share2" data-services="vkontakte,facebook,twitter,odnoklassniki,moimir"></div>
+                        <div class="divider divider--type2"></div>
+                        <div class="news news--no-logo">
+                            <div class="news__read-also">Читайте также:</div>
+                            <div class="news__feed">
+                                <div class="news__item">
+                                    <a href="#" class="news__company">Электромаш</a>
+                                    <a href="#" class="news__title h3">Стало известно, как с карт клиентов российских
+			банков пропадали деньги</a>
+                                    <a href="#" class="news__excerpt">Зачастую на предприятии, в офисах или в торговом центре в пиковые режимы работы нагрузка электроустановки превышает допустимую контрактом величину. Разработка завода ABB SACE – воздушный автоматический выключатель Emax 2 - позволяет управлять энергопотреблением автоматически, избегая лишних трудозатрат и человеческих ошибок. О работе инновационного устройства рассказывает Денис Кошкарев
+			</a>
+                                    <div class="news__date">09 октября 2015, 18:12</div>
+                                </div>
+                                <div class="news__item">
+                                    <a href="#" class="news__company">Электромаш</a>
+                                    <a href="#" class="news__title h3">Стало известно, как с карт клиентов российских
+			банков пропадали деньги</a>
+                                    <a href="#" class="news__excerpt">Фокус-группа однородно обуславливает потребительский бизнес-план.
+			Визуализация концепции требовательна к креативу.
+			</a>
+                                    <div class="news__date">09 октября 2015, 18:12</div>
+                                </div>
+                                <div class="news__item">
+                                    <a href="#" class="news__company">Электромаш</a>
+                                    <a href="#" class="news__title h3">Стало известно, как с карт клиентов российских
+			банков пропадали деньги</a>
+                                    <a href="#" class="news__excerpt">Зачастую на предприятии, в офисах или в торговом центре в пиковые режимы работы нагрузка электроустановки превышает допустимую контрактом величину. Разработка завода ABB SACE – воздушный автоматический выключатель Emax 2 - позволяет управлять энергопотреблением автоматически, избегая лишних трудозатрат и человеческих ошибок. О работе инновационного устройства рассказывает Денис Кошкарев
+			</a>
+                                    <div class="news__date">09 октября 2015, 18:12</div>
+                                </div>
+                                <div class="news__item">
+                                    <a href="#" class="news__company">Электромаш</a>
+                                    <a href="#" class="news__title h3">Стало известно, как с карт клиентов российских
+			банков пропадали деньги</a>
+                                    <a href="#" class="news__excerpt">Фокус-группа однородно обуславливает потребительский бизнес-план.
+			Визуализация концепции требовательна к креативу.
+			</a>
+                                    <div class="news__date">09 октября 2015, 18:12</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider divider--type2"></div>
+                        <br>
+                        <h2>Таблица</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Описание</th>
+                                    <th>Значение 1</th>
+                                    <th>Значение 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Мы рады предложить Вам свои услуги и уверены, что они позволят Вам получить дополнительные конкурентные преимущества, сократить издержки и сконцентрироваться на развитии Вашего бизнеса.</td>
+                                    <td><strong>123</strong></td>
+                                    <td><strong>32</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>На страницах нашего сайта вы найдете последние новости рынка, все необходимые контакты и обзор всего того, что мы способны сделать для роста вашей компании.</td>
+                                    <td><strong>5151</strong></td>
+                                    <td><strong>789</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="layout-L2__col layout-L2__col--col2">
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="layout-L1">
+                <h2>Кнопки</h2>
+                <div class="rubrics">
+                    <div class="rubrics__header">Cветопрозрачные противопожарные конструкции и противопожарное остекление</div>
+                    <div class="rubrics__list">
+                        <a href="/build/10_allNews.html" class="rubrics__link rubrics__link--active">Все новости рубрики</a>
+                        <a href="/build/12_publications.html" class="rubrics__link">Все публикации рубрики</a>
+                        <a href="/build/11_allAds.html" class="rubrics__link">Все объявления рубрики</a>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="pagination__list">
+                        <a href="#" class="pagination__link pagination__link--active">1</a>
+                        <a href="#" class="pagination__link">2</a>
+                        <a href="#" class="pagination__link">3</a>
+                        <div class="pagination__dots"></div>
+                        <a href="#" class="pagination__link">25</a>
+                    </div>
+                </div>
+                <div class="pills pills--in-line">
+                    <a href="/build/05_company.html" class="pills__pill pills__pill--active">
+                        <span class="pills__label">Контакты</span>
+                    </a>
+                    <a href="/build/06_companyNews.html" class="pills__pill">
+                        <span class="pills__label">Новости</span>
+                        <span class="pills__count">(10)</span>
+                    </a>
+                    <a href="/build/09_publications.html" class="pills__pill">
+                        <span class="pills__label">Публикации</span>
+                        <span class="pills__count">(20)</span>
+                    </a>
+                    <a href="/build/07_ad.html" class="pills__pill">
+                        <span class="pills__label">Объявления</span>
+                        <span class="pills__count">(5)</span>
+                    </a>
+                </div>
+                <h2>Форма</h2>
+                <div class="form">
+                    <div class="form__message form__message--success">
+                        <div class="form__message-status">Успех!</div>
+                        <div class="form__message-description">Описание ошибки, может быть достаточно длинным</div>
+                    </div>
+                    <div class="form__message form__message--error">
+                        <div class="form__message-status">Ошибка!</div>
+                        <div class="form__message-description">Описание ошибки, может быть достаточно длинным</div>
+                    </div>
+                    <form class="form__form" id="form_example">
+                        <div class="form__input-wrapper">
+                            <label class="form__label" for="surname">ФИО<span class="form__required-star">*</span></label>
+                            <input type="text" class="form__input form__input--text required" name="surname" id="form_surname">
+                            <p class="form__hint">Укажите фамилию, имя и отчество</p>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label class="form__label" for="email">Адрес электронной почты<span class="form__required-star">*</span></label>
+                            <input type="text" class="form__input form__input--text required email" name="email" id="form_email">
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label class="form__label">Телефон</label>
+                            <input type="text" data-mask="7 (999) 999-99-99" class="form__input form__input--text form__input--telephone">
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label class="form__label">Чекбоксы</label>
+                            <div class="form__input-group">
+                                <label class="form__checkbox-wrapper">
+                                    <input type="checkbox" class="form__checkbox">
+                                    <span>Вариант 1</span>
+                                </label>
+                                <label class="form__checkbox-wrapper">
+                                    <input type="checkbox" class="form__checkbox">
+                                    <span>Вариант 1</span>
+                                </label>
+                                <label class="form__checkbox-wrapper">
+                                    <input type="checkbox" class="form__checkbox">
+                                    <span>Вариант 1</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label class="form__label short">Радиобоксы</label>
+                            <div class="form__input-group">
+                                <label class="form__radio-wrapper">
+                                    <input type="checkbox" class="form__radio">
+                                    <span>Вариант 1</span>
+                                </label>
+                                <label class="form__radio-wrapper">
+                                    <input type="checkbox" class="form__radio">
+                                    <span>Вариант 1</span>
+                                </label>
+                                <label class="form__radio-wrapper">
+                                    <input type="checkbox" class="form__radio">
+                                    <span>Вариант 1</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label class="form__label short">Опции</label>
+                            <select class="form__select">
+                                <option>Опция 1</option>
+                                <option>Опция 2</option>
+                                <option>Опция 3</option>
+                            </select>
+                            <select class="form__select">
+                                <option>Опция 2-1</option>
+                                <option>Опция 2-2</option>
+                                <option>Опция 2-3</option>
+                            </select>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label class="form__label">Загрузка файла</label>
+                            <input type="file" data-value="Выбрать файл">
+                        </div>
+                        <div class="form__input-wrapper">
+                            <label class="form__label">Комментарий</label>
+                            <textarea class="form__input form__input--textarea"></textarea>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <span class="form__required-star">*</span><span> — поля, обязательные к заполнению</span>
+                        </div>
+                        <div class="form__input-wrapper">
+                            <input type="submit" class="form__input form__input--button" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="layout-footer">
+            <div class="divider"></div>
+            <div class="logo-bar">
+                <a href="/build/index.html" class="logo-bar__logo"><img src="images/logo.png"></a>
+                <div class="logo-bar__menu">
+                    <div class="logo-bar__menu-item logo-bar__menu-item--construction">
+                        <a href="#" class="logo-bar__menu-link">Строительство</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--medicine">
+                        <a href="#" class="logo-bar__menu-link">Медицина и фармацевтика</a>
+                        <div class="logo-bar__submenu">
+                            <div class="logo-bar__submenu-title">Медицина и фармацевтика</div>
+                            <a href="#" class="logo-bar__submenu-link"><span>Каталог компаний</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Публикации</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Новости компаний</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Объявления</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Выставки</span></a>
+                        </div>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--transport">
+                        <a href="#" class="logo-bar__menu-link">Склад, транспорт, логистика</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--food">
+                        <a href="#" class="logo-bar__menu-link">Пищевая промышленность</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--attorney">
+                        <a href="#" class="logo-bar__menu-link">Адвокатские, юридические, патентные услуги</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--host">
+                        <a href="#" class="logo-bar__menu-link">Индустрия гостеприимства (HORECA)</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--audit">
+                        <a href="#" class="logo-bar__menu-link">Аудиторские, бухгалтерские услуги</a>
+                    </div>
+                </div>
+                <div class="logo-bar__header">
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer" id="footer">
+                <div class="footer__col">
+                    <div class="footer__title">&copy; B2B24.CENTER</div>
+                    <p class="footer__p footer__p--blue">При использовании материалов портала, ссылка на источник обязательно</p>
+                    <p class="footer__p">г. Москва, Красноворотский проезд, д. 3, стр. 1
+                        <br> (495) 971-92-05, (495) 979-6552</p>
+                    <div class="footer__social">
+                        <span>Мы в соцсетях</span>
+                        <a href="#" class="footer__social-link footer__social-link--fb"></a>
+                        <a href="#" class="footer__social-link footer__social-link--in"></a>
+                        <a href="#" class="footer__social-link footer__social-link--p"></a>
+                        <a href="#" class="footer__social-link footer__social-link--vk"></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__title">О портале</div>
+                    <p class="footer__p">Взаимодействие корпорации и клиента, суммируя приведенные примеры, конструктивно. Построение бренда оправдывает институциональный пул лояльных изданий. В общем, личность топ менеджера по-прежнему востребована. Не факт, что точечное воздействие ускоряет комплексный департамент маркетинга и продаж.</p>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__menu">
+                        <a href="#" class="footer__link">Карта портала</a>
+                        <a href="#" class="footer__link">О портале</a>
+                        <a href="#" class="footer__link">Возможности для компаний</a>
+                    </div>
+                    <a href="#" class="footer__bilingo"><img src="images/bilingo-logo.png"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/jquery.validate.min.js"></script>
+    <script src="vendor/jquery.simpleselect.min.js"></script>
+    <script src="vendor/jquery.nicefileinput.min.js"></script>
+    <script src="vendor/jquery.maskedinput.min.js"></script>
+    <script src="vendor/jquery.slick.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

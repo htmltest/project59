@@ -1,0 +1,444 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=""><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang=""><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="vendor/jquery.simpleselect.min.css">
+    <link rel="stylesheet" href="vendor/jquery.slick.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/after.css">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="vendor/html5shiv.min.js"><\/script>')</script><![endif]-->
+</head>
+<body class="typography">
+    <div class="fady off" id="fady"></div>
+    <div class="layout-wrapper">
+        <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+        <header class="layout-header">
+            <div class="header" id="header">
+                <div class="header-banner">
+                    <a href="#"><img class="header-banner__image" src="images/header-banner-1.jpg"></a>
+                </div>
+                <div class="top-nav">
+                    <div class="top-nav__menu">
+                        <a href="#" class="top-nav__menu-item">О портале</a>
+                        <a href="#" class="top-nav__menu-item">Возможности для компании</a>
+                        <a href="#" class="top-nav__menu-item">Разместить компанию</a>
+                        <a href="#" class="top-nav__menu-item">Личный кабинет</a>
+                    </div>
+                    <div class="top-nav__currency dropdown dropdown--currency">
+                        <a href="#" id="dropdown_currency" class="dropdown__link-wrapper">
+                            <div class="dropdown__icon0"></div>
+                        </a>
+                        <div class="dropdown__list-container currency">
+                            <div class="currency__row">
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">$</span>
+                                    <span class="currency__value currency__value--down">53.21</span>
+                                </a>
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">€</span>
+                                    <span class="currency__value currency__value--up">58.21</span>
+                                </a>
+                            </div>
+                            <div class="currency__row">
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">BRENT $</span>
+                                    <span class="currency__value">52.21</span>
+                                </a>
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">RTS</span>
+                                    <span class="currency__value">1005.21</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-nav__social dropdown dropdown--social">
+                        <a href="#" id="dropdown_select" class="dropdown__link-wrapper">
+                            <div class="dropdown__icon0"></div>
+                        </a>
+                        <div class="dropdown__list-container">
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--fb"></span>Facebook</a>
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--in"></span>LinkedIn</a>
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--p"></span>Профессионалы</a>
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--vk"></span>вКонтакте</a>
+                        </div>
+                    </div>
+                    <div class="top-nav__search top-search">
+                        <form class="top-search__form">
+                            <input class="top-search__input" placeholder="ПОИСК" name="query">
+                            <select class="top-search__select" name="where">
+                                <option value="0">Все отрасли</option>
+                                <option value="1">Отрасль 1</option>
+                                <option value="2">Отрасль 2</option>
+                            </select>
+                            <input type="submit" class="top-search__submit" name="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="logo-bar logo-bar--is-heading">
+                    <a href="/build/index.html" class="logo-bar__logo"><img src="images/logo.png"></a>
+                    <div class="logo-bar__menu">
+                        <div class="logo-bar__menu-item logo-bar__menu-item--construction">
+                            <a href="#" class="logo-bar__menu-link">Строительство</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--medicine">
+                            <a href="#" class="logo-bar__menu-link">Медицина и фармацевтика</a>
+                            <div class="logo-bar__submenu">
+                                <div class="logo-bar__submenu-title">Медицина и фармацевтика</div>
+                                <a href="#" class="logo-bar__submenu-link"><span>Каталог компаний</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Публикации</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Новости компаний</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Объявления</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Выставки</span></a>
+                            </div>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--transport">
+                            <a href="#" class="logo-bar__menu-link">Склад, транспорт, логистика</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--food">
+                            <a href="#" class="logo-bar__menu-link">Пищевая промышленность</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--attorney">
+                            <a href="#" class="logo-bar__menu-link">Адвокатские, юридические, патентные услуги</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--host">
+                            <a href="#" class="logo-bar__menu-link">Индустрия гостеприимства (HORECA)</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--audit">
+                            <a href="#" class="logo-bar__menu-link">Аудиторские, бухгалтерские услуги</a>
+                        </div>
+                    </div>
+                    <div class="logo-bar__header">
+                        Адвокатские, Юридические, Патентные Услуги </div>
+                </div>
+                <div class="divider"></div>
+                <div class="news-carousel news-carousel--short">
+                    <div class="news-carousel__list" id="news_carousel">
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/1-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Камос Лайн</a>
+                                <a href="#" class="news-carousel__title">Пассивность - признак эергоэффектив-ности</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Пассивность - признак эергоэффектив-ности</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Лидер рынка</a>
+                            <a href="#" class="news-carousel__subcat">Медицина и фармацевтика</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Амарил</a>
+                                <a href="#" class="news-carousel__title">Лидер должен предлагать передовые решения</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором по маркетингу ООО "КвадроКом" Еленой Чиликиной</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Лидер должен предлагать передовые решения</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Круглый стол</a>
+                            <a href="#" class="news-carousel__subcat">Пищевая промышленность</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/3-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Абразив Урал</a>
+                                <a href="#" class="news-carousel__title">Рынок алкоголя в России: преодолевая кризис</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Рынок алкоголя в России: преодолевая кризис</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Электромаш</a>
+                                <a href="#" class="news-carousel__title">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                                <a href="#" class="news-carousel__excerpt">В последние месяцы вслед за ростом курса евро взлетели цены и на немецкие авто</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение 2</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/1-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Камос Лайн</a>
+                                <a href="#" class="news-carousel__title">Пассивность - признак эергоэффектив-ности</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Пассивность - признак эергоэффектив-ности</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Лидер рынка 2</a>
+                            <a href="#" class="news-carousel__subcat">Медицина и фармацевтика</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Амарил</a>
+                                <a href="#" class="news-carousel__title">Лидер должен предлагать передовые решения</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором по маркетингу ООО "КвадроКом" Еленой Чиликиной</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Лидер должен предлагать передовые решения</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Круглый стол 2</a>
+                            <a href="#" class="news-carousel__subcat">Пищевая промышленность</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/3-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Абразив Урал</a>
+                                <a href="#" class="news-carousel__title">Рынок алкоголя в России: преодолевая кризис</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Рынок алкоголя в России: преодолевая кризис</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение 2</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Электромаш</a>
+                                <a href="#" class="news-carousel__title">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                                <a href="#" class="news-carousel__excerpt">В последние месяцы вслед за ростом курса евро взлетели цены и на немецкие авто</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="breadcrumbs">
+                    <a href="#" class="breadcrumbs__link">В2В24.CENTER</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <a href="#" class="breadcrumbs__link">Адвокатские, юридические, патентные услуги</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <a href="#" class="breadcrumbs__link">Светопрозрачные противопожарные конструкции и противопожарное остекление</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <a class="breadcrumbs__link breadcrumbs__link--inactive">Все компании</a>
+                </div>
+            </div>
+        </header>
+        <main class="layout-main">
+            <div class="rubrics">
+                <div class="rubrics__header">Cветопрозрачные противопожарные конструкции и противопожарное остекление</div>
+                <div class="rubrics__list">
+                    <a href="/build/10_allNews.html" class="rubrics__link">Все новости рубрики</a>
+                    <a href="/build/12_publications.html" class="rubrics__link">Все публикации рубрики</a>
+                    <a href="/build/11_allAds.html" class="rubrics__link rubrics__link--active">Все объявления рубрики</a>
+                </div>
+            </div>
+            <div class="layout-L2">
+                <a href="#" class="go-top" id="go_top">Наверх</a>
+                <div class="layout-L2__col layout-L2__col--col1">
+                    <div class="company-ads ads">
+                        <div class="company-ads__header">
+                            <div class="company-ads__logo"><img src="images/companies/1-large.png"></div>
+                            <div class="company-ads__title">Клинкманн СПБ, ЗАО</div>
+                            <div class="company-ads__category"><a href="#">Строительство</a> / <a href="#">Адвокатские, Юридические, патентные услуги</a></div>
+                            <div class="company-ads__pills pills pills--in-line">
+                                <a href="/build/05_company.html" class="pills__pill">
+                                    <span class="pills__label">Контакты</span>
+                                </a>
+                                <a href="/build/06_companyNews.html" class="pills__pill">
+                                    <span class="pills__label">Новости</span>
+                                    <span class="pills__count">(10)</span>
+                                </a>
+                                <a href="/build/09_publications.html" class="pills__pill">
+                                    <span class="pills__label">Публикации</span>
+                                    <span class="pills__count">(20)</span>
+                                </a>
+                                <a href="/build/07_ad.html" class="pills__pill pills__pill--active">
+                                    <span class="pills__label">Объявления</span>
+                                    <span class="pills__count">(5)</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ads company-ads__ads ads--no-subheader">
+                            <div class="ads__header">Объявления</div>
+                            <div class="ads__controls">
+                                <div class="ads__controls-label">Отраслевой рубрикатор</div>
+                                <select class="ads__controls-select">
+                                    <option value="0">все рубрики</option>
+                                    <option value="1">рубрика 1</option>
+                                    <option value="2">рубрика 2</option>
+                                </select>
+                                <div class="ads__controls-btnbar">
+                                    <a href="#" class="ads__controls-btn ads__controls-btn--active">Продам</a>
+                                    <a href="#" class="ads__controls-btn">Куплю</a>
+                                    <a href="#" class="ads__controls-btn">Услуги</a>
+                                </div>
+                            </div>
+                            <div class="ads__feed">
+                                <div class="ads__group">
+                                    <div class="ads__grouphead">
+                                        Продам
+                                        <a href="#" class="ads__groupsubhead">Все объявления о продаже</a>
+                                    </div>
+                                    <div class="ads__list">
+                                        <div class="ads__item">
+                                            <a href="#" class="ads__adtitle">Клинкманн СПБ, ЗАО</a>
+                                            <div class="ads__adtext">Декоративный кирпич для облицовки зданий от 11,35 руб. ГОСТ 6133-99. Доставка. Скидки!</div>
+                                        </div>
+                                        <div class="ads__item">
+                                            <a href="#" class="ads__adtitle">Клинкманн СПБ, ЗАО</a>
+                                            <div class="ads__adtext">Кредиты на выгодных условиях. Без предоплат, предварительных взносов и по двум документам</div>
+                                        </div>
+                                        <div class="ads__item">
+                                            <a href="#" class="ads__adtitle">Клинкманн СПБ, ЗАО</a>
+                                            <div class="ads__adtext">В авторегистрие (ARK) экзаменационные автомобили "Toyota"</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ads__group">
+                                    <div class="ads__grouphead">
+                                        Куплю
+                                        <a href="#" class="ads__groupsubhead">Все объявления о продаже</a>
+                                    </div>
+                                    <div class="ads__list">
+                                        <div class="ads__item">
+                                            <a href="#" class="ads__adtitle">Клинкманн СПБ, ЗАО</a>
+                                            <div class="ads__adtext">Декоративный кирпич для облицовки зданий от 11,35 руб. ГОСТ 6133-99. Доставка. Скидки!</div>
+                                        </div>
+                                        <div class="ads__item">
+                                            <a href="#" class="ads__adtitle">Клинкманн СПБ, ЗАО</a>
+                                            <div class="ads__adtext">Сегодня по всему миру построены тысячи "пассивных" зданий. Директор проектного отделения компании "ИНсолар-Инвер" Виктор Горнов рассуждает о том, какие источники энергии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ads__group">
+                                    <div class="ads__grouphead">
+                                        Услуги
+                                        <a href="#" class="ads__groupsubhead">Все объявления о продаже</a>
+                                    </div>
+                                    <div class="ads__list">
+                                        <div class="ads__item">
+                                            <a href="#" class="ads__adtitle">Клинкманн СПБ, ЗАО</a>
+                                            <div class="ads__adtext">Декоративный кирпич для облицовки зданий от 11,35 руб. ГОСТ 6133-99. Доставка. Скидки!</div>
+                                        </div>
+                                        <div class="ads__item">
+                                            <a href="#" class="ads__adtitle">Клинкманн СПБ, ЗАО</a>
+                                            <div class="ads__adtext">В авторегистрие (ARK) экзаменационные автомобили "Toyota" <span class="ads__adtext-ad ads__adtext-ad--hidden">и тут продолжение текста - спрятанный текст, который можно посмотреть, нажав на кнопку. Повторное нажатие на кнопку обратно спрячет данный текст</span></div>
+                                            <a href="#" class="ads__read-more">подробнее</a>
+                                        </div>
+                                        <div class="ads__item">
+                                            <a href="#" class="ads__adtitle">Клинкманн СПБ, ЗАО</a>
+                                            <div class="ads__adtext">Сегодня по всему миру построены тысячи "пассивных" зданий. Директор проектного отделения компании "ИНсолар-Инвер" Виктор Горнов рассуждает о том, какие источники энергии</div>
+                                        </div>
+                                        <div class="ads__item">
+                                            <a href="#" class="ads__adtitle">Клинкманн СПБ, ЗАО</a>
+                                            <div class="ads__adtext">Декоративный кирпич для облицовки зданий от 11,35 руб. ГОСТ 6133-99. Доставка. Скидки!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-L2__col layout-L2__col--col2">
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer class="layout-footer">
+            <div class="divider"></div>
+            <div class="logo-bar">
+                <a href="/build/index.html" class="logo-bar__logo"><img src="images/logo.png"></a>
+                <div class="logo-bar__menu">
+                    <div class="logo-bar__menu-item logo-bar__menu-item--construction">
+                        <a href="#" class="logo-bar__menu-link">Строительство</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--medicine">
+                        <a href="#" class="logo-bar__menu-link">Медицина и фармацевтика</a>
+                        <div class="logo-bar__submenu">
+                            <div class="logo-bar__submenu-title">Медицина и фармацевтика</div>
+                            <a href="#" class="logo-bar__submenu-link"><span>Каталог компаний</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Публикации</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Новости компаний</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Объявления</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Выставки</span></a>
+                        </div>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--transport">
+                        <a href="#" class="logo-bar__menu-link">Склад, транспорт, логистика</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--food">
+                        <a href="#" class="logo-bar__menu-link">Пищевая промышленность</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--attorney">
+                        <a href="#" class="logo-bar__menu-link">Адвокатские, юридические, патентные услуги</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--host">
+                        <a href="#" class="logo-bar__menu-link">Индустрия гостеприимства (HORECA)</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--audit">
+                        <a href="#" class="logo-bar__menu-link">Аудиторские, бухгалтерские услуги</a>
+                    </div>
+                </div>
+                <div class="logo-bar__header">
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer" id="footer">
+                <div class="footer__col">
+                    <div class="footer__title">&copy; B2B24.CENTER</div>
+                    <p class="footer__p footer__p--blue">При использовании материалов портала, ссылка на источник обязательно</p>
+                    <p class="footer__p">г. Москва, Красноворотский проезд, д. 3, стр. 1
+                        <br> (495) 971-92-05, (495) 979-6552</p>
+                    <div class="footer__social">
+                        <span>Мы в соцсетях</span>
+                        <a href="#" class="footer__social-link footer__social-link--fb"></a>
+                        <a href="#" class="footer__social-link footer__social-link--in"></a>
+                        <a href="#" class="footer__social-link footer__social-link--p"></a>
+                        <a href="#" class="footer__social-link footer__social-link--vk"></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__title">О портале</div>
+                    <p class="footer__p">Взаимодействие корпорации и клиента, суммируя приведенные примеры, конструктивно. Построение бренда оправдывает институциональный пул лояльных изданий. В общем, личность топ менеджера по-прежнему востребована. Не факт, что точечное воздействие ускоряет комплексный департамент маркетинга и продаж.</p>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__menu">
+                        <a href="#" class="footer__link">Карта портала</a>
+                        <a href="#" class="footer__link">О портале</a>
+                        <a href="#" class="footer__link">Возможности для компаний</a>
+                    </div>
+                    <a href="#" class="footer__bilingo"><img src="images/bilingo-logo.png"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/jquery.validate.min.js"></script>
+    <script src="vendor/jquery.simpleselect.min.js"></script>
+    <script src="vendor/jquery.nicefileinput.min.js"></script>
+    <script src="vendor/jquery.maskedinput.min.js"></script>
+    <script src="vendor/jquery.slick.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

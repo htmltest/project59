@@ -1,0 +1,682 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=""><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang=""><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="vendor/jquery.simpleselect.min.css">
+    <link rel="stylesheet" href="vendor/jquery.slick.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/after.css">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="vendor/html5shiv.min.js"><\/script>')</script><![endif]-->
+</head>
+<body class="index">
+    <div class="fady off" id="fady"></div>
+    <div class="layout-wrapper">
+        <!--[if lt IE 8]><p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для лучшей навигации по интернету.</p><![endif]-->
+        <header class="layout-header">
+            <div class="header" id="header">
+                <div class="header-banner">
+                    <a href="#"><img class="header-banner__image" src="images/header-banner-1.jpg"></a>
+                </div>
+                <div class="top-nav">
+                    <div class="top-nav__menu">
+                        <a href="#" class="top-nav__menu-item">О портале</a>
+                        <a href="#" class="top-nav__menu-item">Возможности для компании</a>
+                        <a href="#" class="top-nav__menu-item">Разместить компанию</a>
+                        <a href="#" class="top-nav__menu-item">Личный кабинет</a>
+                    </div>
+                    <div class="top-nav__currency dropdown dropdown--currency">
+                        <a href="#" id="dropdown_currency" class="dropdown__link-wrapper">
+                            <div class="dropdown__icon0"></div>
+                        </a>
+                        <div class="dropdown__list-container currency">
+                            <div class="currency__row">
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">$</span>
+                                    <span class="currency__value currency__value--down">53.21</span>
+                                </a>
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">€</span>
+                                    <span class="currency__value currency__value--up">58.21</span>
+                                </a>
+                            </div>
+                            <div class="currency__row">
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">BRENT $</span>
+                                    <span class="currency__value">52.21</span>
+                                </a>
+                                <a href="#" class="currency__item">
+                                    <span class="currency__label">RTS</span>
+                                    <span class="currency__value">1005.21</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-nav__social dropdown dropdown--social">
+                        <a href="#" id="dropdown_select" class="dropdown__link-wrapper">
+                            <div class="dropdown__icon0"></div>
+                        </a>
+                        <div class="dropdown__list-container">
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--fb"></span>Facebook</a>
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--in"></span>LinkedIn</a>
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--p"></span>Профессионалы</a>
+                            <a href="#" class="dropdown__link"><span class="dropdown__icon dropdown__icon--vk"></span>вКонтакте</a>
+                        </div>
+                    </div>
+                    <div class="top-nav__search top-search">
+                        <form class="top-search__form">
+                            <input class="top-search__input" placeholder="ПОИСК" name="query">
+                            <select class="top-search__select" name="where">
+                                <option value="0">Все отрасли</option>
+                                <option value="1">Отрасль 1</option>
+                                <option value="2">Отрасль 2</option>
+                            </select>
+                            <input type="submit" class="top-search__submit" name="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="logo-bar">
+                    <a href="/build/index.html" class="logo-bar__logo"><img src="images/logo.png"></a>
+                    <div class="logo-bar__menu">
+                        <div class="logo-bar__menu-item logo-bar__menu-item--construction">
+                            <a href="#" class="logo-bar__menu-link">Строительство</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--medicine">
+                            <a href="#" class="logo-bar__menu-link">Медицина и фармацевтика</a>
+                            <div class="logo-bar__submenu">
+                                <div class="logo-bar__submenu-title">Медицина и фармацевтика</div>
+                                <a href="#" class="logo-bar__submenu-link"><span>Каталог компаний</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Публикации</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Новости компаний</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Объявления</span></a>
+                                <a href="#" class="logo-bar__submenu-link"><span>Выставки</span></a>
+                            </div>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--transport">
+                            <a href="#" class="logo-bar__menu-link">Склад, транспорт, логистика</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--food">
+                            <a href="#" class="logo-bar__menu-link">Пищевая промышленность</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--attorney">
+                            <a href="#" class="logo-bar__menu-link">Адвокатские, юридические, патентные услуги</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--host">
+                            <a href="#" class="logo-bar__menu-link">Индустрия гостеприимства (HORECA)</a>
+                        </div>
+                        <div class="logo-bar__menu-item logo-bar__menu-item--audit">
+                            <a href="#" class="logo-bar__menu-link">Аудиторские, бухгалтерские услуги</a>
+                        </div>
+                    </div>
+                    <div class="logo-bar__header">
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="news-carousel">
+                    <div class="news-carousel__list" id="news_carousel">
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/1-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Камос Лайн</a>
+                                <a href="#" class="news-carousel__title">Пассивность - признак эергоэффектив-ности</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Пассивность - признак эергоэффектив-ности</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Лидер рынка</a>
+                            <a href="#" class="news-carousel__subcat">Медицина и фармацевтика</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Амарил</a>
+                                <a href="#" class="news-carousel__title">Лидер должен предлагать передовые решения</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором по маркетингу ООО "КвадроКом" Еленой Чиликиной</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Лидер должен предлагать передовые решения</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Круглый стол</a>
+                            <a href="#" class="news-carousel__subcat">Пищевая промышленность</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/3-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Абразив Урал</a>
+                                <a href="#" class="news-carousel__title">Рынок алкоголя в России: преодолевая кризис</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Рынок алкоголя в России: преодолевая кризис</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Электромаш</a>
+                                <a href="#" class="news-carousel__title">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                                <a href="#" class="news-carousel__excerpt">В последние месяцы вслед за ростом курса евро взлетели цены и на немецкие авто</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение 2</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/1-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Камос Лайн</a>
+                                <a href="#" class="news-carousel__title">Пассивность - признак эергоэффектив-ности</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Пассивность - признак эергоэффектив-ности</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Лидер рынка 2</a>
+                            <a href="#" class="news-carousel__subcat">Медицина и фармацевтика</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Амарил</a>
+                                <a href="#" class="news-carousel__title">Лидер должен предлагать передовые решения</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором по маркетингу ООО "КвадроКом" Еленой Чиликиной</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Лидер должен предлагать передовые решения</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Круглый стол 2</a>
+                            <a href="#" class="news-carousel__subcat">Пищевая промышленность</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/3-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Абразив Урал</a>
+                                <a href="#" class="news-carousel__title">Рынок алкоголя в России: преодолевая кризис</a>
+                                <a href="#" class="news-carousel__excerpt">интервью с директором проектного отделения ООО "Инсолар-Инвест" Виктором Горновым</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Рынок алкоголя в России: преодолевая кризис</a>
+                        </div>
+                        <div class="news-carousel__item">
+                            <a href="#" class="news-carousel__cat">Экспертное мнение 2</a>
+                            <a href="#" class="news-carousel__subcat">Адвокатские, юридические, патентные услуги</a>
+                            <div class="news-carousel__preview">
+                                <a href="#"><img src="images/news-carousel/2-thumb.png" class="news-carousel__image"></a>
+                                <a href="#" class="news-carousel__company">Электромаш</a>
+                                <a href="#" class="news-carousel__title">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                                <a href="#" class="news-carousel__excerpt">В последние месяцы вслед за ростом курса евро взлетели цены и на немецкие авто</a>
+                            </div>
+                            <a href="#" class="news-carousel__link-short">Автодилеры не верят в рубль. Цены на авто пока не снижаются</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="layout-main">
+            <div class="layout-L3">
+                <a href="#" class="go-top" id="go_top">Наверх</a>
+                <div class="layout-L3__col layout-L3__col--col1">
+                    <div class="sidemenu">
+                        <div class="sidemenu__item">
+                            <a href="#" class="sidemenu__link">Каталог компаний</a>
+                            <div class="sidemenu__submenu">
+                                <a href="#" class="sidemenu__sublink"><span>Строительство</span></a>
+                                <a href="#" class="sidemenu__sublink"><span>Медицина и фармацевтика</span></a>
+                                <a href="#" class="sidemenu__sublink"><span>Склад, Транспорт, логистика</span></a>
+                                <a href="#" class="sidemenu__sublink"><span>Пищевая промышленность</span></a>
+                                <a href="#" class="sidemenu__sublink"><span>Адвокатские, юридические, патентные услуги</span></a>
+                                <a href="#" class="sidemenu__sublink"><span>Индустрия гостеприимства (Horeca)</span></a>
+                                <a href="#" class="sidemenu__sublink"><span>Аудиторские, бухгалтерские услуги</span></a>
+                            </div>
+                        </div>
+                        <div class="sidemenu__item">
+                            <a href="#" class="sidemenu__link">Публикации</a>
+                        </div>
+                        <div class="sidemenu__item">
+                            <a href="#" class="sidemenu__link">Новости компаний</a>
+                        </div>
+                        <div class="sidemenu__item">
+                            <a href="#" class="sidemenu__link">Объявления</a>
+                        </div>
+                        <div class="sidemenu__item">
+                            <a href="#" class="sidemenu__link">Выставки</a>
+                        </div>
+                    </div>
+                    <div class="top-companies">
+                        <div class="top-companies__header">ТОП-10 Компаний портала</div>
+                        <div class="top-companies__list">
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/1.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">ОО "Абразив УРАЛ"</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">Строительство</a>
+                                        <span class="top-companies__cat-divider">&nbsp;/&nbsp;</span>
+                                        <a href="#" class="top-companies__cat">Адвокатские, Юридические, патетнтые услуги</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/2.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">ОО "АМАРИЛ"</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">Круглый стол</a>
+                                        <span class="top-companies__cat-divider">&nbsp;/&nbsp;</span>
+                                        <a href="#" class="top-companies__cat">пищевая промышленность</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/3.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">ОО "ЭЛЕКТРОМАШ"</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">ЭКСПЕРТНОЕ МНЕНИЕ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/4.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">Оборологистика</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">Круглый стол</a>
+                                        <span class="top-companies__cat-divider">&nbsp;/&nbsp;</span>
+                                        <a href="#" class="top-companies__cat">пищевая промышленность</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/1.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">ОО "Абразив УРАЛ"</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">Строительствао</a>
+                                        <span class="top-companies__cat-divider">&nbsp;/&nbsp;</span>
+                                        <a href="#" class="top-companies__cat">Адвокатские, Юридические, патетнтые услуги</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/2.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">ОО "АМАРИЛ"</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">Круглый стол</a>
+                                        <span class="top-companies__cat-divider">&nbsp;/&nbsp;</span>
+                                        <a href="#" class="top-companies__cat">пищевая промышленность</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/3.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">ОО "ЭЛЕКТРОМАШ"</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">ЭКСПЕРТНОЕ МНЕНИЕ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/4.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">Оборологистика</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">Круглый стол</a>
+                                        <span class="top-companies__cat-divider">&nbsp;/&nbsp;</span>
+                                        <a href="#" class="top-companies__cat">пищевая промышленность</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/1.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">ОО "Абразив УРАЛ"</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">Строительствао</a>
+                                        <span class="top-companies__cat-divider">&nbsp;/&nbsp;</span>
+                                        <a href="#" class="top-companies__cat">Адвокатские, Юридические, патетнтые услуги</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-companies__item">
+                                <a href="#" class="top-companies__logo"><img src="images/companies/2.png"></a>
+                                <div class="top-companies__description">
+                                    <a href="#" class="top-companies__title">ОО "АМАРИЛ"</a>
+                                    <div class="top-companies__categories">
+                                        <a href="#" class="top-companies__cat">Круглый стол</a>
+                                        <span class="top-companies__cat-divider">&nbsp;/&nbsp;</span>
+                                        <a href="#" class="top-companies__cat">пищевая промышленность</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="ad">
+                            <img src="images/ads/banner1.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="ad">
+                            <img src="images/ads/banner2.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="layout-L3__col layout-L3__col--col2">
+                    <div class="pubgrid">
+                        <div class="pubgrid__header">
+                            Строительство <a href="#" class="pubgrid__subheader">Все публикации</a>
+                        </div>
+                        <div class="pubgrid__list">
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/1.png"></div>
+                                <a href="#" class="pubgrid__title">Камос Лайн</a>
+                                <a href="#" class="pubgrid__subtitle">Формула эффективности</a>
+                                <div class="pubgrid__excerpt">Работа «под ключ» существенно облегчает задачу заказчику и экономит его время. Именно к этой модели стремилась компания «Камос Лайн. Управляющий партнер «Камос Лайн» Максим Поскряков может многое рассказать о том, как развивать долгосрочные взаимоотношения с заказчиками, многие из которых со временем перешли в разряд хороших</div>
+                            </div>
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/2.png"></div>
+                                <a href="#" class="pubgrid__title">Абразив урал</a>
+                                <a href="#" class="pubgrid__subtitle">Связующее звено в строительстве</a>
+                                <div class="pubgrid__excerpt">В г. Пушкино Московской области бетон традиционно завозили из соседних. Самвелу Геворкяну, руководившему строительной компанией, эта ситуация была хорошо известна. В октябре 2012 г. он начал строительство в Пушкино завода, способного обеспечить город качественным бетоном. </div>
+                            </div>
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/3.png"></div>
+                                <a href="#" class="pubgrid__title">Амарил</a>
+                                <a href="#" class="pubgrid__subtitle">Пассивность - признак энергоэффективности</a>
+                                <div class="pubgrid__excerpt">Сегодня по всего миру построены тысячи «пассивных» зданий. Директор проектного отделения компании «Инсолар-Инвест» Виктор Горнов рассуждает о том, какие источники энергии</div>
+                            </div>
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/4.png"></div>
+                                <a href="#" class="pubgrid__title">Электромаш</a>
+                                <a href="#" class="pubgrid__subtitle">Стало известно, как с карт клиентов российских банков пропадали деньги</a>
+                                <div class="pubgrid__excerpt">Зачастую на предприятии, в офисах или в торговом центре в пиковые режимы работы нагрузка электроустановки превышает допустимую контрактом величину маржи</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pubgrid">
+                        <div class="pubgrid__header">
+                            Медицина и фармацевтика <a href="#" class="pubgrid__subheader">Все публикации</a>
+                        </div>
+                        <div class="pubgrid__list">
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/5.png"></div>
+                                <a href="#" class="pubgrid__title">Камос Лайн</a>
+                                <a href="#" class="pubgrid__subtitle">Формула эффективности</a>
+                                <div class="pubgrid__excerpt">Работа «под ключ» существенно облегчает задачу заказчику и экономит его время. Именно к этой модели стремилась компания «Камос Лайн. Управляющий партнер «Камос Лайн» Максим Поскряков может многое рассказать о том, как развивать долгосрочные взаимоотношения с заказчиками, многие из которых со временем перешли в разряд хороших</div>
+                            </div>
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/6.png"></div>
+                                <a href="#" class="pubgrid__title">Абразив урал</a>
+                                <a href="#" class="pubgrid__subtitle">Связующее звено в строительстве</a>
+                                <div class="pubgrid__excerpt">В г. Пушкино Московской области бетон традиционно завозили из соседних. Самвелу Геворкяну, руководившему строительной компанией, эта ситуация была хорошо известна. В октябре 2012 г. он начал строительство в Пушкино завода, способного обеспечить город качественным бетоном. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pubgrid">
+                        <div class="pubgrid__header">
+                            Пищевая промышленность <a href="#" class="pubgrid__subheader">Все публикации</a>
+                        </div>
+                        <div class="pubgrid__list">
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/7.png"></div>
+                                <a href="#" class="pubgrid__title">Камос Лайн</a>
+                                <a href="#" class="pubgrid__subtitle">Формула эффективности</a>
+                                <div class="pubgrid__excerpt">Работа «под ключ» существенно облегчает задачу заказчику и экономит его время. Именно к этой модели стремилась компания «Камос Лайн. Управляющий партнер «Камос Лайн» Максим Поскряков может многое рассказать о том, как развивать долгосрочные взаимоотношения с заказчиками, многие из которых со временем перешли в разряд хороших</div>
+                            </div>
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/8.png"></div>
+                                <a href="#" class="pubgrid__title">Абразив урал</a>
+                                <a href="#" class="pubgrid__subtitle">Связующее звено в строительстве</a>
+                                <div class="pubgrid__excerpt">В г. Пушкино Московской области бетон традиционно завозили из соседних. Самвелу Геворкяну, руководившему строительной компанией, эта ситуация была хорошо известна. В октябре 2012 г. он начал строительство в Пушкино завода, способного обеспечить город качественным бетоном. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pubgrid">
+                        <div class="pubgrid__header">
+                            Склад, транспорт, логистика <a href="#" class="pubgrid__subheader">Все публикации</a>
+                        </div>
+                        <div class="pubgrid__list">
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/5.png"></div>
+                                <a href="#" class="pubgrid__title">Камос Лайн</a>
+                                <a href="#" class="pubgrid__subtitle">Формула эффективности</a>
+                                <div class="pubgrid__excerpt">Работа «под ключ» существенно облегчает задачу заказчику и экономит его время. Именно к этой модели стремилась компания «Камос Лайн. Управляющий партнер «Камос Лайн» Максим Поскряков может многое рассказать о том, как развивать долгосрочные взаимоотношения с заказчиками, многие из которых со временем перешли в разряд хороших</div>
+                            </div>
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/6.png"></div>
+                                <a href="#" class="pubgrid__title">Абразив урал</a>
+                                <a href="#" class="pubgrid__subtitle">Связующее звено в строительстве</a>
+                                <div class="pubgrid__excerpt">В г. Пушкино Московской области бетон традиционно завозили из соседних. Самвелу Геворкяну, руководившему строительной компанией, эта ситуация была хорошо известна. В октябре 2012 г. он начал строительство в Пушкино завода, способного обеспечить город качественным бетоном. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pubgrid">
+                        <div class="pubgrid__header">
+                            Индустрия гостепреиимства (HORECA) <a href="#" class="pubgrid__subheader">Все публикации</a>
+                        </div>
+                        <div class="pubgrid__list">
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/1.png"></div>
+                                <a href="#" class="pubgrid__title">Камос Лайн</a>
+                                <a href="#" class="pubgrid__subtitle">Формула эффективности</a>
+                                <div class="pubgrid__excerpt">Работа «под ключ» существенно облегчает задачу заказчику и экономит его время. Именно к этой модели стремилась компания «Камос Лайн. Управляющий партнер «Камос Лайн» Максим Поскряков может многое рассказать о том, как развивать долгосрочные взаимоотношения с заказчиками, многие из которых со временем перешли в разряд хороших</div>
+                            </div>
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/2.png"></div>
+                                <a href="#" class="pubgrid__title">Абразив урал</a>
+                                <a href="#" class="pubgrid__subtitle">Связующее звено в строительстве</a>
+                                <div class="pubgrid__excerpt">В г. Пушкино Московской области бетон традиционно завозили из соседних. Самвелу Геворкяну, руководившему строительной компанией, эта ситуация была хорошо известна. В октябре 2012 г. он начал строительство в Пушкино завода, способного обеспечить город качественным бетоном. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pubgrid">
+                        <div class="pubgrid__header">
+                            Адвокатские, Юридические, Патентные услуги <a href="#" class="pubgrid__subheader">Все публикации</a>
+                        </div>
+                        <div class="pubgrid__list">
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/5.png"></div>
+                                <a href="#" class="pubgrid__title">Камос Лайн</a>
+                                <a href="#" class="pubgrid__subtitle">Формула эффективности</a>
+                                <div class="pubgrid__excerpt">Работа «под ключ» существенно облегчает задачу заказчику и экономит его время. Именно к этой модели стремилась компания «Камос Лайн. Управляющий партнер «Камос Лайн» Максим Поскряков может многое рассказать о том, как развивать долгосрочные взаимоотношения с заказчиками, многие из которых со временем перешли в разряд хороших</div>
+                            </div>
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/6.png"></div>
+                                <a href="#" class="pubgrid__title">Абразив урал</a>
+                                <a href="#" class="pubgrid__subtitle">Связующее звено в строительстве</a>
+                                <div class="pubgrid__excerpt">В г. Пушкино Московской области бетон традиционно завозили из соседних. Самвелу Геворкяну, руководившему строительной компанией, эта ситуация была хорошо известна. В октябре 2012 г. он начал строительство в Пушкино завода, способного обеспечить город качественным бетоном. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pubgrid">
+                        <div class="pubgrid__header">
+                            Аудиторские, бухгалтерские услуги <a href="#" class="pubgrid__subheader">Все публикации</a>
+                        </div>
+                        <div class="pubgrid__list">
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/7.png"></div>
+                                <a href="#" class="pubgrid__title">Камос Лайн</a>
+                                <a href="#" class="pubgrid__subtitle">Формула эффективности</a>
+                                <div class="pubgrid__excerpt">Работа «под ключ» существенно облегчает задачу заказчику и экономит его время. Именно к этой модели стремилась компания «Камос Лайн. Управляющий партнер «Камос Лайн» Максим Поскряков может многое рассказать о том, как развивать долгосрочные взаимоотношения с заказчиками, многие из которых со временем перешли в разряд хороших</div>
+                            </div>
+                            <div class="pubgrid__item">
+                                <div class="pubgrid__image"><img src="images/teasers/8.png"></div>
+                                <a href="#" class="pubgrid__title">Абразив урал</a>
+                                <a href="#" class="pubgrid__subtitle">Связующее звено в строительстве</a>
+                                <div class="pubgrid__excerpt">В г. Пушкино Московской области бетон традиционно завозили из соседних. Самвелу Геворкяну, руководившему строительной компанией, эта ситуация была хорошо известна. В октябре 2012 г. он начал строительство в Пушкино завода, способного обеспечить город качественным бетоном. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-L3__col layout-L3__col--col3">
+                    <div class="quote-of-day">
+                        <div class="quote-of-day__header">Цитата дня</div>
+                        <div class="quote-of-day__content">« Сегодня на заседании правительства Москвы принят пакет нормативных актов »</div>
+                        <div class="quote-of-day__author">
+                            <div class="quote-of-day__avatar"><img src="images/quote-avatar-1.png"></div>
+                            <div class="quote-of-day__name">Елизавета Васильева</div>
+                            <div class="quote-of-day__status">Директора ООО «Русский север»</div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="banner banner--small">
+                            <img src="images/banners/small.png">
+                        </div>
+                    </a>
+                    <div class="sidebarnews">
+                        <div class="sidebarnews__header">Лента новостей</div>
+                        <div class="sidebarnews__list">
+                            <div class="sidebarnews__item">
+                                <a href="#" class="sidebarnews__cat">Строительство</a>
+                                <a href="#" class="sidebarnews__title">В Москве введена рассрочка арендной платы за землю для застройщиков</a>
+                                <div class="sidebarnews__date">24.02.2015</div>
+                            </div>
+                            <div class="sidebarnews__item">
+                                <a href="#" class="sidebarnews__cat">Медицина и фармацевтика</a>
+                                <a href="#" class="sidebarnews__title">Банк Росси отозвал лицензию у Пробизнесбанка</a>
+                                <div class="sidebarnews__date">24.02.2015</div>
+                            </div>
+                            <div class="sidebarnews__item">
+                                <a href="#" class="sidebarnews__cat">Пищевая промышленность</a>
+                                <a href="#" class="sidebarnews__title">В Москве введена рассрочка арендной платы за землю для застройщиков</a>
+                                <div class="sidebarnews__date">24.02.2015</div>
+                            </div>
+                            <div class="sidebarnews__item">
+                                <a href="#" class="sidebarnews__cat">Склад, транспорт, логистика</a>
+                                <a href="#" class="sidebarnews__title">Банк Росси отозвал лицензию у Пробизнесбанка</a>
+                                <div class="sidebarnews__date">24.02.2015</div>
+                            </div>
+                            <div class="sidebarnews__item">
+                                <a href="#" class="sidebarnews__cat">Индустрия гостеприимства (HORECA)</a>
+                                <a href="#" class="sidebarnews__title">В Москве введена рассрочка арендной платы за землю для застройщиков</a>
+                                <div class="sidebarnews__date">24.02.2015</div>
+                            </div>
+                            <div class="sidebarnews__item">
+                                <a href="#" class="sidebarnews__cat">Адвокатские, юридические</a>
+                                <a href="#" class="sidebarnews__title">Банк Росси отозвал лицензию у Пробизнесбанка</a>
+                                <div class="sidebarnews__date">24.02.2015</div>
+                            </div>
+                            <div class="sidebarnews__item">
+                                <a href="#" class="sidebarnews__cat">Аудиторские, бухгалтерские услуги</a>
+                                <a href="#" class="sidebarnews__title">Банк Росси отозвал лицензию у Пробизнесбанка</a>
+                                <div class="sidebarnews__date">24.02.2015</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner banner--large">
+                            <img src="images/banners/large.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer class="layout-footer">
+            <div class="divider"></div>
+            <div class="logo-bar">
+                <a href="/build/index.html" class="logo-bar__logo"><img src="images/logo.png"></a>
+                <div class="logo-bar__menu">
+                    <div class="logo-bar__menu-item logo-bar__menu-item--construction">
+                        <a href="#" class="logo-bar__menu-link">Строительство</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--medicine">
+                        <a href="#" class="logo-bar__menu-link">Медицина и фармацевтика</a>
+                        <div class="logo-bar__submenu">
+                            <div class="logo-bar__submenu-title">Медицина и фармацевтика</div>
+                            <a href="#" class="logo-bar__submenu-link"><span>Каталог компаний</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Публикации</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Новости компаний</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Объявления</span></a>
+                            <a href="#" class="logo-bar__submenu-link"><span>Выставки</span></a>
+                        </div>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--transport">
+                        <a href="#" class="logo-bar__menu-link">Склад, транспорт, логистика</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--food">
+                        <a href="#" class="logo-bar__menu-link">Пищевая промышленность</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--attorney">
+                        <a href="#" class="logo-bar__menu-link">Адвокатские, юридические, патентные услуги</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--host">
+                        <a href="#" class="logo-bar__menu-link">Индустрия гостеприимства (HORECA)</a>
+                    </div>
+                    <div class="logo-bar__menu-item logo-bar__menu-item--audit">
+                        <a href="#" class="logo-bar__menu-link">Аудиторские, бухгалтерские услуги</a>
+                    </div>
+                </div>
+                <div class="logo-bar__header">
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer" id="footer">
+                <div class="footer__col">
+                    <div class="footer__title">&copy; B2B24.CENTER</div>
+                    <p class="footer__p footer__p--blue">При использовании материалов портала, ссылка на источник обязательно</p>
+                    <p class="footer__p">г. Москва, Красноворотский проезд, д. 3, стр. 1
+                        <br> (495) 971-92-05, (495) 979-6552</p>
+                    <div class="footer__social">
+                        <span>Мы в соцсетях</span>
+                        <a href="#" class="footer__social-link footer__social-link--fb"></a>
+                        <a href="#" class="footer__social-link footer__social-link--in"></a>
+                        <a href="#" class="footer__social-link footer__social-link--p"></a>
+                        <a href="#" class="footer__social-link footer__social-link--vk"></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__title">О портале</div>
+                    <p class="footer__p">Взаимодействие корпорации и клиента, суммируя приведенные примеры, конструктивно. Построение бренда оправдывает институциональный пул лояльных изданий. В общем, личность топ менеджера по-прежнему востребована. Не факт, что точечное воздействие ускоряет комплексный департамент маркетинга и продаж.</p>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__menu">
+                        <a href="#" class="footer__link">Карта портала</a>
+                        <a href="#" class="footer__link">О портале</a>
+                        <a href="#" class="footer__link">Возможности для компаний</a>
+                    </div>
+                    <a href="#" class="footer__bilingo"><img src="images/bilingo-logo.png"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/jquery.validate.min.js"></script>
+    <script src="vendor/jquery.simpleselect.min.js"></script>
+    <script src="vendor/jquery.nicefileinput.min.js"></script>
+    <script src="vendor/jquery.maskedinput.min.js"></script>
+    <script src="vendor/jquery.slick.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
